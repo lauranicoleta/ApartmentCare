@@ -17,7 +17,8 @@ namespace ApartmentCare
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PaginaDeAlegereAsociatie());
+            Application.Run(new PaginaPrincipala());
+            //Proba
         }
     }
 }
