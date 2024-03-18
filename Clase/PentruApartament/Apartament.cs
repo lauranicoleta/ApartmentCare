@@ -21,7 +21,7 @@ namespace ApartmentCare.Clase.PentruApartament
         private double restantaIntretinere;
         private double restantaFonduri;
         private double penalizare;
-        public List<Proprietar> proprietari;
+        private Proprietar proprietar;
         public List<Contor> contoare;
         public List<ChitantaApartament> chitanteApartament;
         public List<DatorieApartament> datoriiApartament;
@@ -31,7 +31,7 @@ namespace ApartmentCare.Clase.PentruApartament
         public Apartament(int nrApartament, float suprefataTotala, float suprafataUtila, 
             float cotaParte, int nrCamere, float altParametru, int nrPersoane, double soldFondReparatii, double soldFondRulment, 
             double soldFonduriSpeciale, double restantaIntretinere, double restantaFonduri, 
-            double penalizare, List<Proprietar> proprietari, List<Contor> contoare, 
+            double penalizare, Proprietar proprietar, List<Contor> contoare, 
             List<ChitantaApartament> chitanteApartament, List<DatorieApartament> datoriiApartament)
         {
             this.nrApartament = nrApartament;
@@ -47,7 +47,7 @@ namespace ApartmentCare.Clase.PentruApartament
             this.restantaIntretinere = restantaIntretinere;
             this.restantaFonduri = restantaFonduri;
             this.penalizare = penalizare;
-            this.proprietari = proprietari;
+            this.proprietar = proprietar;
             this.contoare = contoare;
             this.chitanteApartament = chitanteApartament;
             this.datoriiApartament = datoriiApartament;
@@ -67,5 +67,6 @@ namespace ApartmentCare.Clase.PentruApartament
         public double RestantaIntretinere { get => restantaIntretinere; set => restantaIntretinere = value; }
         public double RestantaFonduri { get => restantaFonduri; set => restantaFonduri = value; }
         public double Penalizare { get => penalizare; set => penalizare = value; }
+        internal Proprietar Proprietar { get => proprietar; set => proprietar = value; }
     }
 }

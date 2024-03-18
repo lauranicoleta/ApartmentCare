@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaPrincipala));
             this.panelTop = new System.Windows.Forms.Panel();
-            this.btExit = new System.Windows.Forms.Button();
+            this.btExitConectare = new System.Windows.Forms.Button();
             this.lbApp = new System.Windows.Forms.Label();
             this.panelMeniuPrincipal = new System.Windows.Forms.Panel();
             this.btSolduriSiFonduri = new System.Windows.Forms.Button();
@@ -41,6 +41,9 @@
             this.btCheltuieliSiFacturi = new System.Windows.Forms.Button();
             this.btIntretinere = new System.Windows.Forms.Button();
             this.panelAfisaj = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
+            this.btUserInfo = new System.Windows.Forms.Button();
+            this.btInfoAplicatie = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
             this.panelMeniuPrincipal.SuspendLayout();
@@ -50,40 +53,45 @@
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.White;
-            this.panelTop.Controls.Add(this.btExit);
+            this.panelTop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.panelTop.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panelTop.Controls.Add(this.button1);
+            this.panelTop.Controls.Add(this.btUserInfo);
+            this.panelTop.Controls.Add(this.btInfoAplicatie);
+            this.panelTop.Controls.Add(this.btExitConectare);
             this.panelTop.Controls.Add(this.lbApp);
             this.panelTop.Controls.Add(this.pictureBox1);
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
             this.panelTop.Padding = new System.Windows.Forms.Padding(1);
-            this.panelTop.Size = new System.Drawing.Size(1300, 53);
+            this.panelTop.Size = new System.Drawing.Size(1300, 47);
             this.panelTop.TabIndex = 0;
             // 
-            // btExit
+            // btExitConectare
             // 
-            this.btExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btExit.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btExit.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btExit.ForeColor = System.Drawing.Color.Red;
-            this.btExit.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btExit.Location = new System.Drawing.Point(1246, 12);
-            this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(42, 35);
-            this.btExit.TabIndex = 0;
-            this.btExit.Text = "✖";
-            this.btExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btExit.UseVisualStyleBackColor = true;
-            this.btExit.Click += new System.EventHandler(this.btExit_Click);
+            this.btExitConectare.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btExitConectare.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btExitConectare.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btExitConectare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExitConectare.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btExitConectare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.btExitConectare.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btExitConectare.Location = new System.Drawing.Point(1253, 4);
+            this.btExitConectare.Name = "btExitConectare";
+            this.btExitConectare.Size = new System.Drawing.Size(41, 32);
+            this.btExitConectare.TabIndex = 2;
+            this.btExitConectare.Text = "✖";
+            this.btExitConectare.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btExitConectare.UseVisualStyleBackColor = true;
+            this.btExitConectare.Click += new System.EventHandler(this.btExitConectare_Click);
             // 
             // lbApp
             // 
             this.lbApp.AutoSize = true;
             this.lbApp.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbApp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.lbApp.Location = new System.Drawing.Point(72, 19);
+            this.lbApp.Location = new System.Drawing.Point(60, 11);
             this.lbApp.Name = "lbApp";
             this.lbApp.Size = new System.Drawing.Size(133, 20);
             this.lbApp.TabIndex = 0;
@@ -92,6 +100,7 @@
             // panelMeniuPrincipal
             // 
             this.panelMeniuPrincipal.BackColor = System.Drawing.Color.White;
+            this.panelMeniuPrincipal.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelMeniuPrincipal.Controls.Add(this.btSolduriSiFonduri);
             this.panelMeniuPrincipal.Controls.Add(this.button5);
             this.panelMeniuPrincipal.Controls.Add(this.btRegistruCasa);
@@ -100,10 +109,10 @@
             this.panelMeniuPrincipal.Controls.Add(this.btCheltuieliSiFacturi);
             this.panelMeniuPrincipal.Controls.Add(this.btIntretinere);
             this.panelMeniuPrincipal.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panelMeniuPrincipal.Location = new System.Drawing.Point(0, 53);
+            this.panelMeniuPrincipal.Location = new System.Drawing.Point(0, 47);
             this.panelMeniuPrincipal.Name = "panelMeniuPrincipal";
             this.panelMeniuPrincipal.Padding = new System.Windows.Forms.Padding(1);
-            this.panelMeniuPrincipal.Size = new System.Drawing.Size(205, 742);
+            this.panelMeniuPrincipal.Size = new System.Drawing.Size(205, 748);
             this.panelMeniuPrincipal.TabIndex = 1;
             // 
             // btSolduriSiFonduri
@@ -119,7 +128,7 @@
             this.btSolduriSiFonduri.TabIndex = 7;
             this.btSolduriSiFonduri.Text = "Solduri și Fonduri";
             this.btSolduriSiFonduri.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSolduriSiFonduri.UseVisualStyleBackColor = true;
+            this.btSolduriSiFonduri.UseVisualStyleBackColor = false;
             // 
             // button5
             // 
@@ -134,7 +143,7 @@
             this.button5.TabIndex = 6;
             this.button5.Text = "Registru Bancă";
             this.button5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.UseVisualStyleBackColor = true;
+            this.button5.UseVisualStyleBackColor = false;
             // 
             // btRegistruCasa
             // 
@@ -149,7 +158,7 @@
             this.btRegistruCasa.TabIndex = 5;
             this.btRegistruCasa.Text = "Registru casă";
             this.btRegistruCasa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btRegistruCasa.UseVisualStyleBackColor = true;
+            this.btRegistruCasa.UseVisualStyleBackColor = false;
             // 
             // btContoare
             // 
@@ -164,7 +173,7 @@
             this.btContoare.TabIndex = 4;
             this.btContoare.Text = "Indecși și Contoare";
             this.btContoare.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btContoare.UseVisualStyleBackColor = true;
+            this.btContoare.UseVisualStyleBackColor = false;
             // 
             // btChitante
             // 
@@ -179,7 +188,7 @@
             this.btChitante.TabIndex = 3;
             this.btChitante.Text = "Chitanțe";
             this.btChitante.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btChitante.UseVisualStyleBackColor = true;
+            this.btChitante.UseVisualStyleBackColor = false;
             // 
             // btCheltuieliSiFacturi
             // 
@@ -194,7 +203,7 @@
             this.btCheltuieliSiFacturi.TabIndex = 2;
             this.btCheltuieliSiFacturi.Text = "Cheltuieli și Facturi";
             this.btCheltuieliSiFacturi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btCheltuieliSiFacturi.UseVisualStyleBackColor = true;
+            this.btCheltuieliSiFacturi.UseVisualStyleBackColor = false;
             // 
             // btIntretinere
             // 
@@ -209,35 +218,82 @@
             this.btIntretinere.TabIndex = 1;
             this.btIntretinere.Text = "Tabel Întreținere";
             this.btIntretinere.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btIntretinere.UseVisualStyleBackColor = true;
+            this.btIntretinere.UseVisualStyleBackColor = false;
+            this.btIntretinere.Click += new System.EventHandler(this.btIntretinere_Click);
             // 
             // panelAfisaj
             // 
             this.panelAfisaj.BackColor = System.Drawing.Color.White;
+            this.panelAfisaj.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.panelAfisaj.CausesValidation = false;
             this.panelAfisaj.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelAfisaj.Location = new System.Drawing.Point(205, 53);
+            this.panelAfisaj.Location = new System.Drawing.Point(205, 47);
             this.panelAfisaj.Name = "panelAfisaj";
             this.panelAfisaj.Padding = new System.Windows.Forms.Padding(1);
-            this.panelAfisaj.Size = new System.Drawing.Size(1095, 742);
+            this.panelAfisaj.Size = new System.Drawing.Size(1095, 748);
             this.panelAfisaj.TabIndex = 2;
             this.panelAfisaj.TabStop = true;
             this.panelAfisaj.Paint += new System.Windows.Forms.PaintEventHandler(this.panelAfisaj_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::ApartmentCare.Properties.Resources.setariButton;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1013, 6);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(41, 35);
+            this.button1.TabIndex = 4;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // btUserInfo
+            // 
+            this.btUserInfo.BackColor = System.Drawing.Color.White;
+            this.btUserInfo.BackgroundImage = global::ApartmentCare.Properties.Resources.userInfo;
+            this.btUserInfo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btUserInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btUserInfo.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btUserInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btUserInfo.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUserInfo.Location = new System.Drawing.Point(1060, 4);
+            this.btUserInfo.Name = "btUserInfo";
+            this.btUserInfo.Size = new System.Drawing.Size(46, 35);
+            this.btUserInfo.TabIndex = 4;
+            this.btUserInfo.UseVisualStyleBackColor = false;
+            // 
+            // btInfoAplicatie
+            // 
+            this.btInfoAplicatie.BackColor = System.Drawing.Color.White;
+            this.btInfoAplicatie.BackgroundImage = global::ApartmentCare.Properties.Resources.appInfo;
+            this.btInfoAplicatie.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btInfoAplicatie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btInfoAplicatie.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btInfoAplicatie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btInfoAplicatie.Font = new System.Drawing.Font("Century Gothic", 6.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInfoAplicatie.Location = new System.Drawing.Point(1112, 6);
+            this.btInfoAplicatie.Name = "btInfoAplicatie";
+            this.btInfoAplicatie.Size = new System.Drawing.Size(41, 35);
+            this.btInfoAplicatie.TabIndex = 3;
+            this.btInfoAplicatie.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 53);
+            this.pictureBox1.Size = new System.Drawing.Size(43, 46);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PaginaPrincipala
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.CancelButton = this.btExit;
             this.ClientSize = new System.Drawing.Size(1300, 795);
             this.Controls.Add(this.panelAfisaj);
             this.Controls.Add(this.panelMeniuPrincipal);
@@ -271,7 +327,10 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btRegistruCasa;
         private System.Windows.Forms.Button btIntretinere;
-        public System.Windows.Forms.Button btExit;
+        public System.Windows.Forms.Button btExitConectare;
+        private System.Windows.Forms.Button btInfoAplicatie;
+        private System.Windows.Forms.Button btUserInfo;
+        private System.Windows.Forms.Button button1;
     }
 }
 

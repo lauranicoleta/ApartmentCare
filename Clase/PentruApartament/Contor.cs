@@ -33,5 +33,20 @@ namespace ApartmentCare.Clase
         public string Titlu { get => titlu; set => titlu = value; }
         public double IndexInitial { get => indexInitial; set => indexInitial = value; }
         public double IndexFinal { get => indexFinal; set => indexFinal = value; }
+
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
 }

@@ -29,16 +29,20 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btExitConectare = new System.Windows.Forms.Button();
-            this.btExit = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tbCheieLicenta = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btConectare = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btExitConectare = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btAchizitieLicenta = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.btConectare = new System.Windows.Forms.Button();
+            this.tbCheieLicenta = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btExit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.tbEmailConectare = new System.Windows.Forms.TextBox();
+            this.tbParolaConectare = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,22 +62,16 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.btAchizitieLicenta);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.btConectare);
-            this.panel2.Controls.Add(this.tbCheieLicenta);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(0, 41);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(471, 597);
-            this.panel2.TabIndex = 1;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.label2.Location = new System.Drawing.Point(12, 7);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 21);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Bun venit!";
             // 
             // btExitConectare
             // 
@@ -93,6 +91,108 @@
             this.btExitConectare.UseVisualStyleBackColor = true;
             this.btExitConectare.Click += new System.EventHandler(this.btExit_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.tbParolaConectare);
+            this.panel2.Controls.Add(this.tbEmailConectare);
+            this.panel2.Controls.Add(this.label5);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.btAchizitieLicenta);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btConectare);
+            this.panel2.Controls.Add(this.tbCheieLicenta);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 41);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(471, 597);
+            this.panel2.TabIndex = 1;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // btAchizitieLicenta
+            // 
+            this.btAchizitieLicenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btAchizitieLicenta.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAchizitieLicenta.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btAchizitieLicenta.FlatAppearance.BorderSize = 0;
+            this.btAchizitieLicenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btAchizitieLicenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btAchizitieLicenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAchizitieLicenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btAchizitieLicenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.btAchizitieLicenta.Location = new System.Drawing.Point(-1, 546);
+            this.btAchizitieLicenta.Name = "btAchizitieLicenta";
+            this.btAchizitieLicenta.Size = new System.Drawing.Size(471, 50);
+            this.btAchizitieLicenta.TabIndex = 5;
+            this.btAchizitieLicenta.Text = "Achiziționează cheia de licență acum!";
+            this.btAchizitieLicenta.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.label3.Location = new System.Drawing.Point(35, 235);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(405, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Administrare Transparentă, Comunicare Fluidă, Eficiență Garantată!\r\n";
+            // 
+            // btConectare
+            // 
+            this.btConectare.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btConectare.FlatAppearance.BorderSize = 2;
+            this.btConectare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btConectare.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btConectare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.btConectare.Location = new System.Drawing.Point(162, 490);
+            this.btConectare.Name = "btConectare";
+            this.btConectare.Size = new System.Drawing.Size(141, 50);
+            this.btConectare.TabIndex = 3;
+            this.btConectare.Text = "Conectare";
+            this.btConectare.UseVisualStyleBackColor = true;
+            this.btConectare.Click += new System.EventHandler(this.btConectare_Click);
+            // 
+            // tbCheieLicenta
+            // 
+            this.tbCheieLicenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
+            this.tbCheieLicenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbCheieLicenta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbCheieLicenta.ForeColor = System.Drawing.Color.White;
+            this.tbCheieLicenta.Location = new System.Drawing.Point(-1, 321);
+            this.tbCheieLicenta.Multiline = true;
+            this.tbCheieLicenta.Name = "tbCheieLicenta";
+            this.tbCheieLicenta.Size = new System.Drawing.Size(471, 33);
+            this.tbCheieLicenta.TabIndex = 2;
+            this.tbCheieLicenta.Text = "ex: KYHS77264...";
+            this.tbCheieLicenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.tbCheieLicenta.TextChanged += new System.EventHandler(this.tbCheieLicenta_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
+            this.label1.Location = new System.Drawing.Point(72, 276);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(317, 30);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Introduceți cheia licenței:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ApartmentCare.Properties.Resources.Logo;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(471, 265);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // btExit
             // 
             this.btExit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
@@ -110,97 +210,51 @@
             this.btExit.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btExit.UseVisualStyleBackColor = true;
             // 
-            // label1
+            // label4
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
-            this.label1.Location = new System.Drawing.Point(72, 294);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(317, 30);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Introduceți cheia licenței:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.label4.Location = new System.Drawing.Point(73, 383);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 21);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Email:";
             // 
-            // tbCheieLicenta
+            // label5
             // 
-            this.tbCheieLicenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(186)))), ((int)(((byte)(234)))));
-            this.tbCheieLicenta.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbCheieLicenta.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbCheieLicenta.ForeColor = System.Drawing.Color.White;
-            this.tbCheieLicenta.Location = new System.Drawing.Point(-1, 370);
-            this.tbCheieLicenta.Multiline = true;
-            this.tbCheieLicenta.Name = "tbCheieLicenta";
-            this.tbCheieLicenta.Size = new System.Drawing.Size(471, 33);
-            this.tbCheieLicenta.TabIndex = 2;
-            this.tbCheieLicenta.Text = "ex: KYHS77264...";
-            this.tbCheieLicenta.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.tbCheieLicenta.TextChanged += new System.EventHandler(this.tbCheieLicenta_TextChanged);
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
+            this.label5.Location = new System.Drawing.Point(73, 434);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(63, 21);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Parolă:";
             // 
-            // pictureBox1
+            // tbEmailConectare
             // 
-            this.pictureBox1.Image = global::ApartmentCare.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(-1, -1);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(471, 265);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.tbEmailConectare.BackColor = System.Drawing.Color.White;
+            this.tbEmailConectare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbEmailConectare.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmailConectare.ForeColor = System.Drawing.Color.Black;
+            this.tbEmailConectare.Location = new System.Drawing.Point(162, 383);
+            this.tbEmailConectare.Name = "tbEmailConectare";
+            this.tbEmailConectare.Size = new System.Drawing.Size(237, 26);
+            this.tbEmailConectare.TabIndex = 8;
+            this.tbEmailConectare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label2
+            // tbParolaConectare
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.label2.Location = new System.Drawing.Point(12, 7);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 21);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Bun venit!";
-            // 
-            // btConectare
-            // 
-            this.btConectare.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btConectare.FlatAppearance.BorderSize = 2;
-            this.btConectare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btConectare.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btConectare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.btConectare.Location = new System.Drawing.Point(159, 438);
-            this.btConectare.Name = "btConectare";
-            this.btConectare.Size = new System.Drawing.Size(141, 50);
-            this.btConectare.TabIndex = 3;
-            this.btConectare.Text = "Conectare";
-            this.btConectare.UseVisualStyleBackColor = true;
-            this.btConectare.Click += new System.EventHandler(this.btConectare_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.label3.Location = new System.Drawing.Point(35, 235);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(405, 17);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Administrare Transparentă, Comunicare Fluidă, Eficiență Garantată!\r\n";
-            // 
-            // btAchizitieLicenta
-            // 
-            this.btAchizitieLicenta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btAchizitieLicenta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btAchizitieLicenta.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btAchizitieLicenta.FlatAppearance.BorderSize = 0;
-            this.btAchizitieLicenta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btAchizitieLicenta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btAchizitieLicenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btAchizitieLicenta.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btAchizitieLicenta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.btAchizitieLicenta.Location = new System.Drawing.Point(-1, 521);
-            this.btAchizitieLicenta.Name = "btAchizitieLicenta";
-            this.btAchizitieLicenta.Size = new System.Drawing.Size(471, 50);
-            this.btAchizitieLicenta.TabIndex = 5;
-            this.btAchizitieLicenta.Text = "Achiziționează cheia de licență acum!";
-            this.btAchizitieLicenta.UseVisualStyleBackColor = true;
+            this.tbParolaConectare.BackColor = System.Drawing.Color.White;
+            this.tbParolaConectare.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbParolaConectare.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbParolaConectare.ForeColor = System.Drawing.Color.Black;
+            this.tbParolaConectare.Location = new System.Drawing.Point(162, 433);
+            this.tbParolaConectare.Name = "tbParolaConectare";
+            this.tbParolaConectare.Size = new System.Drawing.Size(237, 26);
+            this.tbParolaConectare.TabIndex = 9;
+            this.tbParolaConectare.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PaginaConectare
             // 
@@ -211,7 +265,6 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.Name = "PaginaConectare";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -238,5 +291,9 @@
         private System.Windows.Forms.Button btConectare;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btAchizitieLicenta;
+        private System.Windows.Forms.TextBox tbParolaConectare;
+        private System.Windows.Forms.TextBox tbEmailConectare;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4;
     }
 }

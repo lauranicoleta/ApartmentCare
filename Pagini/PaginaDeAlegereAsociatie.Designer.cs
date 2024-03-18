@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaginaDeAlegereAsociatie));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem(new string[] {
+            "123445",
+            "Asociatia de Prop. Bloc 18"}, -1);
             this.panel1 = new System.Windows.Forms.Panel();
             this.panelAfisaj = new System.Windows.Forms.Panel();
             this.btExitConectare = new System.Windows.Forms.Button();
@@ -39,9 +42,11 @@
             this.infoFunctieDrepturi = new System.Windows.Forms.ToolTip(this.components);
             this.tbFunctieDrepturi = new System.Windows.Forms.TextBox();
             this.tbNumeUtilizator = new System.Windows.Forms.TextBox();
-            this.lbAsociatiiDisponibile = new System.Windows.Forms.ListBox();
             this.btConectare = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.lvAlegereAsociatie = new System.Windows.Forms.ListView();
+            this.coloanaCUIAscocAlegere = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.coloanaDenumireAsociatieAlegere = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1.SuspendLayout();
             this.panelAfisaj.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -159,43 +164,6 @@
             this.tbNumeUtilizator.Text = "Nume Prenume";
             this.tbNumeUtilizator.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lbAsociatiiDisponibile
-            // 
-            this.lbAsociatiiDisponibile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbAsociatiiDisponibile.BackColor = System.Drawing.Color.White;
-            this.lbAsociatiiDisponibile.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lbAsociatiiDisponibile.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbAsociatiiDisponibile.FormattingEnabled = true;
-            this.lbAsociatiiDisponibile.HorizontalScrollbar = true;
-            this.lbAsociatiiDisponibile.ItemHeight = 21;
-            this.lbAsociatiiDisponibile.Items.AddRange(new object[] {
-            "Asociatia 1",
-            "Asociatia 2",
-            "Asociatia 3",
-            "Asociatia 4",
-            "Asociatia 5",
-            "Asociatia 6",
-            "Asociatia 7",
-            "Asociatia 4",
-            "Asociatia 5",
-            "Asociatia 6",
-            "Asociatia 7",
-            "Asociatia 4",
-            "Asociatia 5",
-            "Asociatia 6",
-            "Asociatia 7",
-            "Asociatia 6",
-            "Asociatia 7",
-            "Asociatia 4",
-            "Asociatia 5",
-            "Asociatia 6",
-            "Asociatia 7"});
-            this.lbAsociatiiDisponibile.Location = new System.Drawing.Point(13, 258);
-            this.lbAsociatiiDisponibile.Name = "lbAsociatiiDisponibile";
-            this.lbAsociatiiDisponibile.Size = new System.Drawing.Size(436, 210);
-            this.lbAsociatiiDisponibile.TabIndex = 5;
-            this.lbAsociatiiDisponibile.SelectedIndexChanged += new System.EventHandler(this.lbAsociatiiDisponibile_SelectedIndexChanged);
-            // 
             // btConectare
             // 
             this.btConectare.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -203,7 +171,7 @@
             this.btConectare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btConectare.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btConectare.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(130)))), ((int)(((byte)(164)))));
-            this.btConectare.Location = new System.Drawing.Point(162, 498);
+            this.btConectare.Location = new System.Drawing.Point(148, 513);
             this.btConectare.Name = "btConectare";
             this.btConectare.Size = new System.Drawing.Size(141, 50);
             this.btConectare.TabIndex = 6;
@@ -221,6 +189,37 @@
             this.label2.TabIndex = 7;
             this.label2.Text = "Alege asociația pe care dorești să o lucrezi:";
             // 
+            // lvAlegereAsociatie
+            // 
+            this.lvAlegereAsociatie.BackColor = System.Drawing.Color.White;
+            this.lvAlegereAsociatie.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.lvAlegereAsociatie.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.coloanaCUIAscocAlegere,
+            this.coloanaDenumireAsociatieAlegere});
+            this.lvAlegereAsociatie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lvAlegereAsociatie.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lvAlegereAsociatie.FullRowSelect = true;
+            this.lvAlegereAsociatie.HideSelection = false;
+            listViewItem1.Tag = "";
+            this.lvAlegereAsociatie.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1});
+            this.lvAlegereAsociatie.Location = new System.Drawing.Point(13, 253);
+            this.lvAlegereAsociatie.Name = "lvAlegereAsociatie";
+            this.lvAlegereAsociatie.Size = new System.Drawing.Size(436, 239);
+            this.lvAlegereAsociatie.TabIndex = 8;
+            this.lvAlegereAsociatie.UseCompatibleStateImageBehavior = false;
+            this.lvAlegereAsociatie.View = System.Windows.Forms.View.Details;
+            // 
+            // coloanaCUIAscocAlegere
+            // 
+            this.coloanaCUIAscocAlegere.Text = "CUI";
+            this.coloanaCUIAscocAlegere.Width = 102;
+            // 
+            // coloanaDenumireAsociatieAlegere
+            // 
+            this.coloanaDenumireAsociatieAlegere.Text = "Denumire Asociație";
+            this.coloanaDenumireAsociatieAlegere.Width = 298;
+            // 
             // PaginaDeAlegereAsociatie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
@@ -228,9 +227,9 @@
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btExitConectare;
             this.ClientSize = new System.Drawing.Size(461, 593);
+            this.Controls.Add(this.lvAlegereAsociatie);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btConectare);
-            this.Controls.Add(this.lbAsociatiiDisponibile);
             this.Controls.Add(this.tbFunctieDrepturi);
             this.Controls.Add(this.tbNumeUtilizator);
             this.Controls.Add(this.label1);
@@ -255,12 +254,14 @@
         private System.Windows.Forms.ToolTip infoFunctieDrepturi;
         private System.Windows.Forms.TextBox tbNumeUtilizator;
         private System.Windows.Forms.TextBox tbFunctieDrepturi;
-        private System.Windows.Forms.ListBox lbAsociatiiDisponibile;
         private System.Windows.Forms.Panel panelAfisaj;
         private System.Windows.Forms.Label lbApp;
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Button btExitConectare;
         private System.Windows.Forms.Button btConectare;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ListView lvAlegereAsociatie;
+        private System.Windows.Forms.ColumnHeader coloanaCUIAscocAlegere;
+        private System.Windows.Forms.ColumnHeader coloanaDenumireAsociatieAlegere;
     }
 }

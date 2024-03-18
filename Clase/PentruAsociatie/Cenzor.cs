@@ -14,18 +14,16 @@ namespace ApartmentCare.Clase
         private string nrTelefon;
         private string email;
         private string parola;
-        private List<Asociatie> asociatii;
 
         public Cenzor() { }
 
-        public Cenzor(string cheieLicenta, string nume, string nrTelefon, string email, string parola, List<Asociatie> asociatii)
+        public Cenzor(string cheieLicenta, string nume, string nrTelefon, string email, string parola)
         {
             this.cheieLicenta = cheieLicenta;
             this.nume = nume;
             this.nrTelefon = nrTelefon;
             this.email = email;
             this.parola = parola;
-            this.asociatii = asociatii;
         }
 
         public string CheieLicenta { get => cheieLicenta; set => cheieLicenta = value; }
@@ -33,7 +31,6 @@ namespace ApartmentCare.Clase
         public string NrTelefon { get => nrTelefon; set => nrTelefon = value; }
         public string Email { get => email; set => email = value; }
         public string Parola { get => parola; set => parola = value; }
-        public List<Asociatie> Asociatii { get => asociatii; set => asociatii = value; }
 
     }
 }
